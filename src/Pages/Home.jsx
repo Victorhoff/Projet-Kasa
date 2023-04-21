@@ -14,7 +14,7 @@ const Home = () => {
       <main className="gallery">
         {rentals.map((rental) => (
           <article key={rental.id} className="gallery__card">
-            <Link to={`/kasa/rental/${rental.id}`}>
+            <Link to={`/projet-kasa/rental/${rental.id}`}>
               <Cards image={rental.cover} title={rental.title} />
             </Link>
           </article>

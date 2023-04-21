@@ -4,14 +4,14 @@ const Navigation = () => {
   return (
     <header>
       <nav className="navigation">
-        <Link to="/kasa">
+        <Link to="/projet-kasa/">
           <img className="navigation__logo" src="logo.png" alt="logo kasa" />
         </Link>
         <ul>
-          <NavLink to="/kasa/">
+          <NavLink to="/projet-kasa/">
             <li>Accueil</li>
           </NavLink>
-          <NavLink to="/kasa/About">
+          <NavLink to="/projet-kasa/About">
             <li>A propos</li>
           </NavLink>
         </ul>

@@ -8,9 +8,12 @@ const Router = () => {
   return (
     <>
       <Routes>
-        <Route path="/kasa/" element={<Home />} />
-        <Route path="/kasa/rental/:rentalId" element={<Accomodation />} />
-        <Route path="/kasa/about" element={<About />} />
+        <Route path="/projet-kasa/" element={<Home />} />
+        <Route
+          path="/projet-kasa/rental/:rentalId"
+          element={<Accomodation />}
+        />
+        <Route path="/projet-kasa/about" element={<About />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </>

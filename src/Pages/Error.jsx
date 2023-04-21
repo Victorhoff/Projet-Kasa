@@ -7,7 +7,7 @@ const Error = () => {
       <p className="error__msg">
         Oups! La page que vous demandez n'existe pas.
       </p>
-      <a className="error__link" href="/kasa/">
+      <a className="error__link" href="/projet-kasa/">
         Retourner sur la page d'accueil
       </a>
     </main>
