@@ -1,0 +1,73 @@
+.accomodation {
+    @include marginAuto;
+    margin: 20px auto 0px auto;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+        font-size: 36px;
+        margin: 0;
+        width: 75%;
+    }
+
+    &__location {
+        @include marginAuto;
+        font-size: 18px;
+    }
+
+    &__host {
+        display: flex;
+        align-items: center;
+
+        &__image {
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+        }
+
+        &__name {
+            font-size: 18px;
+            padding: 0px 10px;
+        }
+    }
+}
+
+.rating__tags__container {
+    @include marginAuto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tags {
+    &__container {
+        display: flex;
+        padding: 0;
+        gap: 10px;
+        margin: 10px 0px;
+        align-items: center;
+    }
+
+    &__list {
+        background-color: $primary-color;
+        color: white;
+        font-size: 14px;
+        min-width: 115px;
+        height: 25px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 5px
+    }
+}
+
+.rating {
+    display: flex;
+    width: 150px;
+    height: 40px;
+
+    &__icon {
+        width: 30px;
+        height: 30px;
+    }
+}
