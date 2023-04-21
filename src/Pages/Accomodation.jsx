@@ -5,6 +5,7 @@ import Slider from "../Components/Slider";
 import Host from "../Components/Host";
 import Stars from "../Components/Stars";
 import Tags from "../Components/Tags";
+import Collapse from "../Components/Collapse";
 
 const Accomodation = () => {
   const { rentalId } = useParams();
@@ -37,6 +38,29 @@ const Accomodation = () => {
       <div className="rating__tags__container">
         <Tags tags={selectedRental.tags} />
         <Stars rating={selectedRental.rating} />
+      </div>
+
+      {/* Collapses déroulantes */}
+
+      <div className="collapse">
+        <div className="collapse__dropdown">
+          <Collapse label="Description">
+            <p>{selectedRental.description}</p>
+          </Collapse>
+        </div>
+        <div className="collapse__dropdown">
+          <Collapse label="Equipements">
+            <ul className="collapse__dropdown__content">
+              {selectedRental.equipments.map((equipments, index) => {
+                return (
+                  <li key={index} className="collapse__dropdown__content__list">
+                    {equipments}
+                  </li>
+                );
+              })}
+            </ul>
+          </Collapse>
+        </div>
       </div>
     </main>
   );

@@ -1,0 +1,78 @@
+.collapse {
+    @include marginAuto;
+    margin: 10px auto;
+    justify-content: space-between;
+
+    &__about {
+        @include marginAuto;
+        flex-direction: column;
+        margin-top: 20px;
+        width: 80%;
+        
+        &__container {
+            margin-bottom: 30px;
+        }
+    }
+    
+    &__dropdown {
+        width: 47%;
+        margin-bottom: 10px;
+
+        &__arrow {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &__content {
+            background-color: $secondary-color;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: column wrap;
+
+                & p {
+                    font-size: 18px;
+                    padding: 0px 15px;
+                    margin: 24px 0px;
+                    line-height: 25px;
+                }
+
+                & li {
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+
+                & ul {
+                    padding-left: 15px;
+                }
+            }
+
+            &__title {
+                width: 100%;
+                background-color: $primary-color;
+                color: white;
+                border-radius: 10px;
+                border: none;
+                height: 52px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                & h2 {
+                    margin-left: 10px;
+                    color: white;
+                    font-size: 18px;
+                }            
+            }
+    }
+}
+
+.dropdownArrow {
+    margin-right: 10px;
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+}
+
+.dropdownArrow.true {
+    transform: rotate(0deg);
+}
