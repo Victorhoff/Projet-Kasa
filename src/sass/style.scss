@@ -1,0 +1,47 @@
+// Importation des polices
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Shrikhand&display=swap');
+
+// Déclaration des variables
+$primary-color: #FF6060;
+$secondary-color: #F6F6F6;
+
+// Déclaration des mixins
+@mixin arrow {
+    position: absolute;
+    bottom: 40%;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    width: 47px;
+    height: 80px;
+}
+
+@mixin marginAuto {
+    display: flex;
+    width: 90%;
+    max-width: 1240px;
+    margin: auto;
+}
+
+// Paramètres généraux
+main {
+    min-height: 70vh;
+}
+
+body {
+    margin: 0;
+}
+
+p, h1, h2, h3, ul, li, a {
+    color: $primary-color;
+    font-family: montserrat, sans-serif;
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+// Importation des fichiers 
+@import "./_footer.scss";
+@import "./_navbar.scss";
+@import "./_home.scss";
+@import "./banner"

@@ -1,0 +1,25 @@
+.navigation {
+    @include marginAuto;
+    margin: 0 auto;
+    height: 140px;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+    }
+
+    a.active {
+        border-bottom: 1px solid $primary-color;
+    }
+
+    ul {
+        display: flex;
+        gap: 25px;
+    }
+
+    &__logo {
+        width: 210px;
+        height: 68px;
+    }
+}
