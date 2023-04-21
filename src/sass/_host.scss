@@ -1,0 +1,33 @@
+.accomodation {
+    @include marginAuto;
+    margin: 20px auto 0px auto;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+        font-size: 36px;
+        margin: 0;
+        width: 75%;
+    }
+
+    &__location {
+        @include marginAuto;
+        font-size: 18px;
+    }
+
+    &__host {
+        display: flex;
+        align-items: center;
+
+        &__image {
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+        }
+
+        &__name {
+            font-size: 18px;
+            padding: 0px 10px;
+        }
+    }
+}
