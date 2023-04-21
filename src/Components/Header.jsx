@@ -8,7 +8,7 @@ const Navigation = () => {
           <img className="navigation__logo" src="logo.png" alt="logo kasa" />
         </Link>
         <ul>
-          <NavLink to="/kasa">
+          <NavLink to="/kasa/">
             <li>Accueil</li>
           </NavLink>
           <NavLink to="/kasa/About">
