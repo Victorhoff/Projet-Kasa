@@ -1,0 +1,19 @@
+.slider {
+    &__image {
+        height: 225px;
+    }
+}
+
+.rightArrow, .leftArrow {
+    width: 12px;
+    height: 24px;
+    top: 45%;
+}
+
+.rightArrow {
+    right: 15px
+}
+
+.leftArrow {
+    left: 15px;
+}

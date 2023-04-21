@@ -1,0 +1,15 @@
+.gallery {
+    width: 100%;
+    background-color: white;
+    margin: 25px 0px 0px 0px;
+    padding: 0px;
+
+    &__card {
+        width: 90%;
+        margin-top: 0;
+
+        & img {
+            width: 100%;
+        }
+    }
+}

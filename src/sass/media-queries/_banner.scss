@@ -1,0 +1,14 @@
+.banner {
+    height: 111px;
+
+    &__title {
+            font-size: 24px;
+            top: 10%;
+            left: 5%;
+            width: 250px;
+        }
+
+    & img {
+        height: 111px;
+    }
+}
